@@ -1,14 +1,177 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color ="primary">
     <ion-title>
-      Ionic Blank
+   Questions and Answers App!!
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-</ion-content>
+<ion-content id="pic">
+  
+  <div id="piy">
+    
+      <ion-item>
+          <ion-input text-center type="text"placeholder="name" [(ngModel)] = "name"></ion-input>
+        </ion-item>
+
+        <h1 text-center>QUESTIONS & ANSWERS</h1>
+  
+        <h1><u>GATEGORY:1</u></h1>
+       
+        <ion-label>Film/TV</ion-label>
+        <div id="div1">
+            
+            <p>1.what is the profession of popeye?</p>
+            <ion-label>sofia</ion-label>
+            <ion-checkbox [(ngModel)] = "sofia"></ion-checkbox>
+            <ion-label>poppy</ion-label>
+            <ion-checkbox [(ngModel)] = "poppy"></ion-checkbox>
+          </div>
+        <div id="div1">
+            <p>2.who is the director of the x files?</p>
+            <ion-label>mark</ion-label>
+            <ion-checkbox [(ngModel)] = "mark"></ion-checkbox>
+            <ion-label>william</ion-label> 
+            <ion-checkbox [(ngModel)]= "william"></ion-checkbox>
+        </div>
+       <div id="div1">
+          <p>3.how many oscars did tatinic movie got?
+              <ion-label>7</ion-label>
+              <ion-checkbox [(ngModel)] = "seven"></ion-checkbox>
+              <ion-label>6</ion-label>
+              <ion-checkbox [(ngModel)] = "six"></ion-checkbox>
+             </div>
+             <div id="div1">
+         <p>4.what number is on herbie the beatle?</p>
+        <ion-label>444</ion-label>
+        <ion-checkbox  [(ngModel)] = "four"></ion-checkbox>
+        <ion-label>n337</ion-label>
+        <ion-checkbox [(ngModel)] = "three"></ion-checkbox>
+             </div>
+       <div id ="div1">
+         <p>5.who is the director of the Reservoir Dogs?</p>
+        <ion-label>david kane</ion-label>
+        <ion-checkbox [(ngModel)] = "david"></ion-checkbox>
+        <ion-label>negro</ion-label>
+        <ion-checkbox [(ngModel)] = "negro"></ion-checkbox>
+       
+       </div>
+       
+        <div class="mm">
+          <h1><u>GATEGORY:2</u></h1>
+       <h2>LANGUAGE</h2>
+       <div id="div1">
+         <p>1.what is spanish word for black?</p>
+        <ion-label>livo</ion-label>
+        <ion-checkbox [(ngModel)] = "livo"></ion-checkbox>
+        <ion-label>nigroo</ion-label>
+        <ion-checkbox [(ngModel)] = "nig"></ion-checkbox>
+       </div>
+        <div id="div1">
+            <p>2.what is the singular of scampi?</p>
+            <ion-label>scampo</ion-label>
+            <ion-checkbox  [(ngModel)] = "scampo"></ion-checkbox>
+            <ion-label>treeygen</ion-label>
+            <ion-checkbox  [(ngModel)] = "treeygen"></ion-checkbox>
+        </div>
+       <div id="div1">
+          <p>3.what is the name of medicinal mud?</p>
+          <ion-label>fango</ion-label>
+          <ion-checkbox  [(ngModel)] = "fango"></ion-checkbox>
+          <ion-label>fungi</ion-label>
+          <ion-checkbox [(ngModel)] = "fungi"></ion-checkbox>
+       </div>
+        <div id="div1">
+            <p>4.what do we call native of kenya?</p>
+            <ion-label>kanyan</ion-label>
+            <ion-checkbox [(ngModel)] = "kanyan"></ion-checkbox>
+            <ion-label>nigerian</ion-label>
+            <ion-checkbox [(ngModel)] = "nigerian" ></ion-checkbox>
+        </div>
+      <div id="div1">
+          <p>5.what does abbrevian sms mean?</p>
+          <ion-label>short massage services</ion-label>
+          <ion-checkbox [(ngModel)] = "sms"></ion-checkbox>
+          <ion-label>short services</ion-label>
+          <ion-checkbox [(ngModel)] = "ss" ></ion-checkbox>
+          </div>
+          
+      </div>
+        
+       
+        <h1>GATEGORY:3</h1>
+        <h2>LITERATUE:</h2>
+        <div id="div1">
+            <P>1.who was the wife of othello?</P>
+            <ion-label>winnie</ion-label>
+            <ion-checkbox  [(ngModel)]="winnie"></ion-checkbox>
+            <ion-label>matilda</ion-label>
+            <ion-checkbox [(ngModel)]="matilda" ></ion-checkbox>
+        </div>
+        <div id="div1">
+            <p>2.who wrote nothing but the truth?</p>
+            <ion-label>Thabo Kau</ion-label>
+            <ion-checkbox [(ngModel)]="thabo" ></ion-checkbox>
+            <ion-label>David kane</ion-label>
+            <ion-checkbox [(ngModel)]="david" ></ion-checkbox>
+        </div>
+       <div id="div1">
+          <p>3.who killed the minotau?</p>
+       <ion-label>Martin Jones</ion-label>
+        <ion-checkbox [(ngModel)]="martin"></ion-checkbox>
+        <ion-label>momo mackayla</ion-label>
+        <ion-checkbox [(ngModel)]="macklay"></ion-checkbox>
+       </div>
+       <div id="div1">
+         <p>4.in which country did shakespare s hamelt live?</p>
+       <ion-label>Israel</ion-label>
+        <ion-checkbox [(ngModel)]="israel"></ion-checkbox>
+        <ion-label>mozambique</ion-label>
+        <ion-checkbox [(ngModel)]="moza" ></ion-checkbox>
+       </div>
+      <div id="div1">
+          <p>5.who's box did epimethis open?</p>
+          <ion-label>moses</ion-label>
+          <ion-checkbox [(ngModel)]="moses" ></ion-checkbox>
+          <ion-label>maria</ion-label>
+          <ion-checkbox [(ngModel)]="maria" ></ion-checkbox>
+      </div>
+      
+       
+       <div *ngIf = "value" id="res">
+          <h1 text-center>YOUR ANSWERS!!</h1>
+          <b>name: {{name}}</b><br>
+
+         <b>{{poppy}}</b><br> 
+         <b>{{william}}</b><br> 
+         <b>{{six}}</b><br> 
+         <b>{{444}}</b><br>
+         <b>{{negroo}}</b><br>
+         <b>{{nigroo}}</b><br>
+         <b>{{moses}}</b><br>
+         <b>{{israel}}</b><br>
+         <b>{{thabo}}</b><br>
+         <b>{{martin}}</b><br>
+         <b>{{matilda}}</b><br>
+         <b>short message services</b><br>
+         <b>{{nigerian}}</b><br>
+         <b>{{fango}}</b><br>
+         <b>{{treeygen}}</b><br>
+         <b>{{livo}}</b><br>
+         
+         
+         
+
+
+          <h1 text-center>RESULTS</h1>
+         
+         <b>{{score}}</b><br>
+            
+         </div> 
+         <br>
+         <br>
+         <button id="show your answers"ion-button color="light" (click)="onanswers()" >shower your answers</button>
+  </div>
+
+ 
+  </ion-content>
